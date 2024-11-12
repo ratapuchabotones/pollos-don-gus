@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollos Don Gus</title>
+    <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Estilos adicionales -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">Pollos Don Gus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Imagen de Don Gus -->
+    <section id="inicio" class="hero d-flex align-items-center justify-content-center text-center text-white">
+        <div class="container">
+            <img src="dongus.png" alt="Don Gus" class="img-fluid rounded-circle mb-4 animate__animated animate__fadeInDown" style="width: 250px; height: 250px;">
+            <h1 class="display-3 animate__animated animate__fadeIn animate__delay-1s">¡EL MEJOR POLLO ASADO!</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-2s">Deliciosamente preparado, solo en Pollos Don Gus</p>
+            <a href="#contacto" class="btn btn-warning btn-lg mt-4 animate__animated animate__zoomIn animate__delay-3s">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Carrusel de Menú -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold text-primary">Nuestro Menú</h2>
+            <p class="mb-5 text-muted">Prueba nuestras especialidades que te harán volver por más</p>
+            <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner shadow-lg rounded">
+                    <div class="carousel-item active">
+                        <img src="pollo1.jpg" class="d-block w-100 transition-img" alt="Pollo Asado">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pollo Asado</h5>
+                            <p>Jugoso y lleno de sabor</p>
+                            <a href="#" class="btn btn-warning">Compra ya</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="cf.png" class="d-block w-100 transition-img" alt="Combo Familiar">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Combo Familiar</h5>
+                            <p>Incluye papas y refrescos</p>
+                            <a href="#" class="btn btn-warning">Compra ya</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="acompañamientos.jpg" class="d-block w-100 transition-img" alt="Acompañamientos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Acompañamientos</h5>
+                            <p>Complementa tu plato con nuestras guarniciones</p>
+                            <a href="#" class="btn btn-warning">Compra ya</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Contáctanos</h2>
+            <p class="mb-4">¡Síguenos en nuestras redes sociales o completa el formulario para más información!</p>
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control mb-3" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" class="form-control mb-3" placeholder="Tu Correo Electrónico" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Tu Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
+            </form>
+            <div class="d-flex justify-content-center mt-4">
+                <a href="https://www.facebook.com" class="btn btn-outline-light m-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com" class="btn btn-outline-light m-2"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.twitter.com" class="btn btn-outline-light m-2"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Pollos Don Gus. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+        <div class="d-flex justify-content-center">
+            <a href="https://wa.me/123456789" class="btn btn-success btn-lg m-2">
+                <i class="fab fa-whatsapp"></i> ¡Haz tu pedido por WhatsApp!
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

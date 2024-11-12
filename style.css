@@ -1,0 +1,81 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(226, 247, 33);
+}
+
+/* Sección hero (inicio) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fondo.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Transiciones de imágenes en el carrusel */
+.transition-img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.transition-img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Menú (Navbar) */
+#menu {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* Importar fuente llamativa */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+/* Estilo del navbar */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Negrita para que se vea más llamativo */
+    text-transform: uppercase; /* Mayúsculas para un estilo más fuerte */
+    letter-spacing: 1px; /* Espaciado entre letras para más claridad */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFD700; /* Color amarillo brillante */
+    padding: 10px 20px; /* Espaciado en los enlaces */
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Amarillo más oscuro para hover */
+    transform: scale(1.1); /* Efecto de escala en hover */
+}
+
+/* Título del menú */
+#menu h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: rgba(255, 235, 18, 0.955);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+}
